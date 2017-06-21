@@ -1,0 +1,175 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/cricket"
+    android:scaleType="centerCrop"/>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.example.hi.cricket.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="0"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/team_A_score"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUN 1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="get1scoreTeamA"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="RUN 2"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:onClick="get2scoreTeamA"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="RUN 4"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:onClick="get4scoreTeamA"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="RUN 6"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:onClick="get6scoreTeamA"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.hi.cricket.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginBottom="16dp"
+
+        android:id="@+id/team_B_score"
+        android:text="0"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run 1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:textStyle="bold"
+        android:onClick="get1scoreTeamB"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run 2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="get2scoreTeamB"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run 4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:onClick="get4scoreTeamB"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUN 6"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:textStyle="bold"
+        android:onClick="get6scoreTeamB"/>
+        </LinearLayout>
+
+   </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScore"/>
+
+    </RelativeLayout>
